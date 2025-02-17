@@ -17,7 +17,7 @@ class HourlyView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           SizedBox(
-            height: (MediaQuery.of(context).size.height / 2 - 150),
+            height: (MediaQuery.of(context).size.height / 3),
             child: Stack(
               children: [
                 Align(
@@ -45,9 +45,8 @@ class HourlyView extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         child: Image.asset(
                           "assets/img/weather_icons/${getWeatherImgName(minutelyHourly.minutelyHourlyValues.weatherCode)}@2x.png",
-                          width: MediaQuery.of(context).size.width / 2,
                           fit: BoxFit.cover,
-                          scale: .75,
+                          scale: 1,
                         ),
                       ),
                     ],
@@ -67,6 +66,10 @@ class HourlyView extends StatelessWidget {
                   ),
                   Text(
                     "${minutelyHourly.minutelyHourlyValues.windSpeed}Km/hr",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  Text(
+                    "windy",
                     style: TextStyle(color: Colors.white54),
                   ),
                 ],

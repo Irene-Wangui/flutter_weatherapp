@@ -25,6 +25,7 @@ class _OverviewPageState extends State<OverviewPage> {
     if (nameparts.length < 3) {
       return location.name;
     }
+
     List<String> newNameList = [nameparts.first, nameparts.last];
     return newNameList.join(',');
   }

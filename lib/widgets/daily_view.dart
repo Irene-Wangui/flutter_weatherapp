@@ -63,13 +63,13 @@ class DailyView extends StatelessWidget {
                     color: Colors.white70,
                   ),
                   Text(
-                    "${daily.dailyValues.windSpeedMax}\t/${daily.dailyValues.windSpeedMax}",
+                    "${daily.dailyValues.windSpeedMax}\t/${daily.dailyValues.windSpeedMax}/km/h",
                     style: TextStyle(
                       color: Colors.white,
                     ),
                   ),
                   Text(
-                    "km/h",
+                    "windy",
                     style: TextStyle(color: Colors.white54),
                   ),
                 ],
@@ -78,7 +78,7 @@ class DailyView extends StatelessWidget {
                 children: [
                   Icon(MdiIcons.waterPercent, color: Colors.white70),
                   Text(
-                    "${daily.dailyValues.humidityMax}\t/${daily.dailyValues.windSpeedMax}",
+                    "${daily.dailyValues.humidityMax}\t/${daily.dailyValues.humidityMin}%",
                     style: TextStyle(
                       color: Colors.white,
                     ),
@@ -96,7 +96,7 @@ class DailyView extends StatelessWidget {
                     color: Colors.white54,
                   ),
                   Text(
-                    "${daily.dailyValues.visibilityMax}\t/${daily.dailyValues.windSpeedMin}",
+                    "${daily.dailyValues.visibilityMax}\t/${daily.dailyValues.visibilityMin}km/h",
                     style: TextStyle(
                       color: Colors.white,
                     ),
