@@ -17,7 +17,7 @@ class HourlyView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           SizedBox(
-            height: (MediaQuery.of(context).size.height / 3),
+            height: (MediaQuery.of(context).size.height / 2 - 120),
             child: Stack(
               children: [
                 Align(
@@ -36,7 +36,7 @@ class HourlyView extends StatelessWidget {
                           "${minutelyHourly.minutelyHourlyValues.temperature}\u00B0",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 70,
+                            fontSize: 60,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -45,8 +45,7 @@ class HourlyView extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         child: Image.asset(
                           "assets/img/weather_icons/${getWeatherImgName(minutelyHourly.minutelyHourlyValues.weatherCode)}@2x.png",
-                          fit: BoxFit.cover,
-                          scale: 1,
+                          width: MediaQuery.of(context).size.width / 3,
                         ),
                       ),
                     ],

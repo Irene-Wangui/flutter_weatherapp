@@ -8,7 +8,7 @@ Future<List<LocationResult>> searchLocation(String query) async {
   log(query);
   final url = 'https://geocode.maps.co/search?api_key=67b70bc32baee715117833fbp556c28&q=$query';
   log(url);
-  final response = await http.get(Uri.parse(url), headers: {});
+  final response = await http.get(Uri.parse(url));
 
   if (response.statusCode == 200) {
     try {

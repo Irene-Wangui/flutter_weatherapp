@@ -1,6 +1,10 @@
 // location_search_delegate.dart
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:smokeless_weather/models/location_result_model.dart';
+import 'package:smokeless_weather/utils/location%20_results_page.dart';
 import 'package:smokeless_weather/utils/location_service.dart';
 
 class LocationSearchDelegate extends SearchDelegate<LocationResult?> {
@@ -13,7 +17,13 @@ class LocationSearchDelegate extends SearchDelegate<LocationResult?> {
           query = '';
           showSuggestions(context);
         },
-      )
+      ),
+      IconButton(
+        onPressed: () {
+          log("trial");
+        },
+        icon: Icon(MdiIcons.headCog),
+      ),
     ];
   }
 
@@ -29,7 +39,8 @@ class LocationSearchDelegate extends SearchDelegate<LocationResult?> {
 
   @override
   Widget buildResults(BuildContext context) {
-    return buildSuggestions(context);
+    //return buildSuggestions(context);
+    return LocationResultsPage(query: query);
   }
 
   @override
@@ -56,6 +67,7 @@ class LocationSearchDelegate extends SearchDelegate<LocationResult?> {
           itemBuilder: (context, index) {
             final location = results[index];
             return ListTile(
+              leading: Icon(MdiIcons.pin),
               title: Text(location.displayName),
               onTap: () {
                 close(context, location);

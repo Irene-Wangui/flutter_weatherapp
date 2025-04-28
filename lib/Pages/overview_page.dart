@@ -3,10 +3,11 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
+import 'package:smokeless_weather/Pages/location_search_delegate.dart';
 import 'package:smokeless_weather/models/location_result_model.dart';
 import 'package:smokeless_weather/models/tomorrow_io_weather_model.dart';
 import 'package:smokeless_weather/utils/get_weather_img_name.dart';
-import 'package:smokeless_weather/utils/location-search-delegate';
+
 import 'package:smokeless_weather/widgets/daily_view.dart';
 import 'package:smokeless_weather/widgets/hourly_view.dart';
 

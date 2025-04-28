@@ -34,7 +34,7 @@ class DailyView extends StatelessWidget {
                         "${daily.dailyValues.temperatureApparentMax}\u00B0\t/${daily.dailyValues.temperatureMin}",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 70,
+                          fontSize: 60,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
@@ -43,9 +43,7 @@ class DailyView extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       child: Image.asset(
                         "assets/img/weather_icons/${getWeatherImgName(daily.dailyValues.weatherCodeMin)}@2x.png",
-                        width: MediaQuery.of(context).size.width / 2,
-                        fit: BoxFit.cover,
-                        scale: .75,
+                        width: MediaQuery.of(context).size.width / 3.5,
                       ),
                     ),
                   ],

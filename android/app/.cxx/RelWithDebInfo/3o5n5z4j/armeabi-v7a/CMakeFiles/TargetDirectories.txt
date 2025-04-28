@@ -1,0 +1,2 @@
+C:/Sideprojects/smokeless_weather/android/app/.cxx/RelWithDebInfo/3o5n5z4j/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Sideprojects/smokeless_weather/android/app/.cxx/RelWithDebInfo/3o5n5z4j/armeabi-v7a/CMakeFiles/rebuild_cache.dir

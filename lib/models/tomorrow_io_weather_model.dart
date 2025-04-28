@@ -113,70 +113,70 @@ class MinutelyHourly {
 class MinutelyHourlyValues {
   double? cloudBase;
   double? cloudCeiling;
-  int cloudCover;
-  double dewPoint;
+  int? cloudCover;
+  double? dewPoint;
   double? evapotranspiration;
-  double freezingRainIntensity;
-  double hailProbability;
-  double hailSize;
-  int humidity;
+  double? freezingRainIntensity;
+  double? hailProbability;
+  double? hailSize;
+  int? humidity;
   double? iceAccumulation;
   double? iceAccumulationLwe;
-  double precipitationProbability;
-  double pressureSeaLevel;
-  double pressureSurfaceLevel;
+  double? precipitationProbability;
+  double? pressureSeaLevel;
+  double? pressureSurfaceLevel;
   double? rainAccumulation;
   double? rainAccumulationLwe;
-  double rainIntensity;
+  double? rainIntensity;
   double? sleetAccumulation;
   double? sleetAccumulationLwe;
-  double sleetIntensity;
+  double? sleetIntensity;
   double? snowAccumulation;
   double? snowAccumulationLwe;
-  double snowIntensity;
-  double temperature;
-  double temperatureApparent;
+  double? snowIntensity;
+  double? temperature;
+  double? temperatureApparent;
   int? uvHealthConcern;
   int? uvIndex;
-  double visibility;
+  double? visibility;
   int weatherCode;
-  int windDirection;
-  double windGust;
-  double windSpeed;
+  int? windDirection;
+  double? windGust;
+  double? windSpeed;
 
   MinutelyHourlyValues({
     this.cloudBase,
     this.cloudCeiling,
-    required this.cloudCover,
-    required this.dewPoint,
+    this.cloudCover,
+    this.dewPoint,
     this.evapotranspiration,
     required this.freezingRainIntensity,
-    required this.hailProbability,
-    required this.hailSize,
-    required this.humidity,
-    required this.iceAccumulation,
-    required this.iceAccumulationLwe,
-    required this.precipitationProbability,
-    required this.pressureSeaLevel,
-    required this.pressureSurfaceLevel,
-    required this.rainAccumulation,
-    required this.rainAccumulationLwe,
-    required this.rainIntensity,
-    required this.sleetAccumulation,
-    required this.sleetAccumulationLwe,
-    required this.sleetIntensity,
-    required this.snowAccumulation,
-    required this.snowAccumulationLwe,
-    required this.snowIntensity,
-    required this.temperature,
-    required this.temperatureApparent,
+    this.hailProbability,
+    this.hailSize,
+    this.humidity,
+    this.iceAccumulation,
+    this.iceAccumulationLwe,
+    this.precipitationProbability,
+    this.pressureSeaLevel,
+    this.pressureSurfaceLevel,
+    this.rainAccumulation,
+    this.rainAccumulationLwe,
+    this.rainIntensity,
+    this.sleetAccumulation,
+    this.sleetAccumulationLwe,
+    this.sleetIntensity,
+    this.snowAccumulation,
+    this.snowAccumulationLwe,
+    this.snowIntensity,
+    this.temperature,
+    this.temperatureApparent,
     this.uvHealthConcern,
     this.uvIndex,
-    required this.visibility,
+    this.visibility,
     required this.weatherCode,
-    required this.windDirection,
-    required this.windGust,
-    required this.windSpeed,
+    this.windDirection,
+    this.windGust,
+    this.windSpeed,
   });
 
   factory MinutelyHourlyValues.fromJson(Map<String, dynamic> json) {
@@ -254,216 +254,216 @@ class MinutelyHourlyValues {
 }
 
 class DailyValues {
-  double cloudBaseAvg;
-  double cloudBaseMax;
-  double cloudBaseMin;
-  double cloudCeilingAvg;
-  double cloudCeilingMax;
-  int cloudCeilingMin;
-  int cloudCoverAvg;
-  int cloudCoverMax;
-  int cloudCoverMin;
-  double dewPointAvg;
-  double dewPointMax;
-  double dewPointMin;
-  double evapotranspirationAvg;
-  double evapotranspirationMax;
-  double evapotranspirationMin;
-  double evapotranspirationSum;
-  int freezingRainIntensityAvg;
-  int freezingRainIntensityMax;
-  int freezingRainIntensityMin;
-  double hailProbabilityAvg;
-  double hailProbabilityMax;
-  double hailProbabilityMin;
-  double hailSizeAvg;
-  double hailSizeMax;
-  double hailSizeMin;
-  int humidityAvg;
-  int humidityMax;
-  int humidityMin;
-  int iceAccumulationAvg;
-  int iceAccumulationLweAvg;
-  int iceAccumulationLweMax;
-  int iceAccumulationLweMin;
-  int iceAccumulationLweSum;
-  int iceAccumulationMax;
-  int iceAccumulationMin;
-  int iceAccumulationSum;
+  double? cloudBaseAvg;
+  double? cloudBaseMax;
+  double? cloudBaseMin;
+  double? cloudCeilingAvg;
+  double? cloudCeilingMax;
+  int? cloudCeilingMin;
+  int? cloudCoverAvg;
+  int? cloudCoverMax;
+  int? cloudCoverMin;
+  double? dewPointAvg;
+  double? dewPointMax;
+  double? dewPointMin;
+  double? evapotranspirationAvg;
+  double? evapotranspirationMax;
+  double? evapotranspirationMin;
+  double? evapotranspirationSum;
+  int? freezingRainIntensityAvg;
+  int? freezingRainIntensityMax;
+  int? freezingRainIntensityMin;
+  double? hailProbabilityAvg;
+  double? hailProbabilityMax;
+  double? hailProbabilityMin;
+  double? hailSizeAvg;
+  double? hailSizeMax;
+  double? hailSizeMin;
+  int? humidityAvg;
+  int? humidityMax;
+  int? humidityMin;
+  int? iceAccumulationAvg;
+  int? iceAccumulationLweAvg;
+  int? iceAccumulationLweMax;
+  int? iceAccumulationLweMin;
+  int? iceAccumulationLweSum;
+  int? iceAccumulationMax;
+  int? iceAccumulationMin;
+  int? iceAccumulationSum;
   DateTime? moonriseTime;
   DateTime? moonsetTime;
-  double precipitationProbabilityAvg;
-  int precipitationProbabilityMax;
-  int precipitationProbabilityMin;
-  int pressureSeaLevelAvg;
-  int pressureSeaLevelMax;
-  int pressureSeaLevelMin;
-  int pressureSurfaceLevelAvg;
-  int pressureSurfaceLevelMax;
-  int pressureSurfaceLevelMin;
-  double rainAccumulationAvg;
-  double rainAccumulationLweAvg;
-  double rainAccumulationLweMax;
-  int rainAccumulationLweMin;
-  double rainAccumulationMax;
-  int rainAccumulationMin;
-  double rainAccumulationSum;
-  double rainIntensityAvg;
-  double rainIntensityMax;
-  int rainIntensityMin;
-  int sleetAccumulationAvg;
-  int sleetAccumulationLweAvg;
-  int sleetAccumulationLweMax;
-  int sleetAccumulationLweMin;
-  int sleetAccumulationLweSum;
-  int sleetAccumulationMax;
-  int sleetAccumulationMin;
-  int sleetIntensityAvg;
-  int sleetIntensityMax;
-  int sleetIntensityMin;
-  int snowAccumulationAvg;
-  int snowAccumulationLweAvg;
-  int snowAccumulationLweMax;
-  int snowAccumulationLweMin;
-  int snowAccumulationLweSum;
-  int snowAccumulationMax;
-  int snowAccumulationMin;
-  int snowAccumulationSum;
-  int snowIntensityAvg;
-  int snowIntensityMax;
-  int snowIntensityMin;
-  DateTime sunriseTime;
-  DateTime sunsetTime;
-  double temperatureApparentAvg;
-  double temperatureApparentMax;
-  double temperatureApparentMin;
-  double temperatureAvg;
-  double temperatureMax;
-  double temperatureMin;
+  double? precipitationProbabilityAvg;
+  double? precipitationProbabilityMax;
+  double? precipitationProbabilityMin;
+  double? pressureSeaLevelAvg;
+  double? pressureSeaLevelMax;
+  double? pressureSeaLevelMin;
+  double? pressureSurfaceLevelAvg;
+  double? pressureSurfaceLevelMax;
+  double? pressureSurfaceLevelMin;
+  double? rainAccumulationAvg;
+  double? rainAccumulationLweAvg;
+  double? rainAccumulationLweMax;
+  int? rainAccumulationLweMin;
+  double? rainAccumulationMax;
+  int? rainAccumulationMin;
+  double? rainAccumulationSum;
+  double? rainIntensityAvg;
+  double? rainIntensityMax;
+  int? rainIntensityMin;
+  int? sleetAccumulationAvg;
+  int? sleetAccumulationLweAvg;
+  int? sleetAccumulationLweMax;
+  int? sleetAccumulationLweMin;
+  int? sleetAccumulationLweSum;
+  int? sleetAccumulationMax;
+  int? sleetAccumulationMin;
+  int? sleetIntensityAvg;
+  int? sleetIntensityMax;
+  int? sleetIntensityMin;
+  int? snowAccumulationAvg;
+  int? snowAccumulationLweAvg;
+  int? snowAccumulationLweMax;
+  int? snowAccumulationLweMin;
+  int? snowAccumulationLweSum;
+  int? snowAccumulationMax;
+  int? snowAccumulationMin;
+  int? snowAccumulationSum;
+  int? snowIntensityAvg;
+  int? snowIntensityMax;
+  int? snowIntensityMin;
+  DateTime? sunriseTime;
+  DateTime? sunsetTime;
+  double? temperatureApparentAvg;
+  double? temperatureApparentMax;
+  double? temperatureApparentMin;
+  double? temperatureAvg;
+  double? temperatureMax;
+  double? temperatureMin;
   int? uvHealthConcernAvg;
   int? uvHealthConcernMax;
   int? uvHealthConcernMin;
   int? uvIndexAvg;
   int? uvIndexMax;
   int? uvIndexMin;
-  double visibilityAvg;
-  int visibilityMax;
-  double visibilityMin;
+  double? visibilityAvg;
+  int? visibilityMax;
+  double? visibilityMin;
   int weatherCodeMax;
   int weatherCodeMin;
-  int windDirectionAvg;
-  double windGustAvg;
-  double windGustMax;
-  double windGustMin;
-  double windSpeedAvg;
-  double windSpeedMax;
-  double windSpeedMin;
+  int? windDirectionAvg;
+  double? windGustAvg;
+  double? windGustMax;
+  double? windGustMin;
+  double? windSpeedAvg;
+  double? windSpeedMax;
+  double? windSpeedMin;
 
   DailyValues({
-    required this.cloudBaseAvg,
-    required this.cloudBaseMax,
-    required this.cloudBaseMin,
-    required this.cloudCeilingAvg,
-    required this.cloudCeilingMax,
-    required this.cloudCeilingMin,
-    required this.cloudCoverAvg,
-    required this.cloudCoverMax,
-    required this.cloudCoverMin,
-    required this.dewPointAvg,
-    required this.dewPointMax,
-    required this.dewPointMin,
-    required this.evapotranspirationAvg,
-    required this.evapotranspirationMax,
-    required this.evapotranspirationMin,
-    required this.evapotranspirationSum,
-    required this.freezingRainIntensityAvg,
-    required this.freezingRainIntensityMax,
-    required this.freezingRainIntensityMin,
-    required this.hailProbabilityAvg,
-    required this.hailProbabilityMax,
-    required this.hailProbabilityMin,
-    required this.hailSizeAvg,
-    required this.hailSizeMax,
-    required this.hailSizeMin,
-    required this.humidityAvg,
-    required this.humidityMax,
-    required this.humidityMin,
-    required this.iceAccumulationAvg,
-    required this.iceAccumulationLweAvg,
-    required this.iceAccumulationLweMax,
-    required this.iceAccumulationLweMin,
-    required this.iceAccumulationLweSum,
-    required this.iceAccumulationMax,
-    required this.iceAccumulationMin,
-    required this.iceAccumulationSum,
+    this.cloudBaseAvg,
+    this.cloudBaseMax,
+    this.cloudBaseMin,
+    this.cloudCeilingAvg,
+    this.cloudCeilingMax,
+    this.cloudCeilingMin,
+    this.cloudCoverAvg,
+    this.cloudCoverMax,
+    this.cloudCoverMin,
+    this.dewPointAvg,
+    this.dewPointMax,
+    this.dewPointMin,
+    this.evapotranspirationAvg,
+    this.evapotranspirationMax,
+    this.evapotranspirationMin,
+    this.evapotranspirationSum,
+    this.freezingRainIntensityAvg,
+    this.freezingRainIntensityMax,
+    this.freezingRainIntensityMin,
+    this.hailProbabilityAvg,
+    this.hailProbabilityMax,
+    this.hailProbabilityMin,
+    this.hailSizeAvg,
+    this.hailSizeMax,
+    this.hailSizeMin,
+    this.humidityAvg,
+    this.humidityMax,
+    this.humidityMin,
+    this.iceAccumulationAvg,
+    this.iceAccumulationLweAvg,
+    this.iceAccumulationLweMax,
+    this.iceAccumulationLweMin,
+    this.iceAccumulationLweSum,
+    this.iceAccumulationMax,
+    this.iceAccumulationMin,
+    this.iceAccumulationSum,
     this.moonriseTime,
     this.moonsetTime,
-    required this.precipitationProbabilityAvg,
-    required this.precipitationProbabilityMax,
-    required this.precipitationProbabilityMin,
-    required this.pressureSeaLevelAvg,
-    required this.pressureSeaLevelMax,
-    required this.pressureSeaLevelMin,
-    required this.pressureSurfaceLevelAvg,
-    required this.pressureSurfaceLevelMax,
-    required this.pressureSurfaceLevelMin,
-    required this.rainAccumulationAvg,
-    required this.rainAccumulationLweAvg,
-    required this.rainAccumulationLweMax,
-    required this.rainAccumulationLweMin,
-    required this.rainAccumulationMax,
-    required this.rainAccumulationMin,
-    required this.rainAccumulationSum,
-    required this.rainIntensityAvg,
-    required this.rainIntensityMax,
-    required this.rainIntensityMin,
-    required this.sleetAccumulationAvg,
-    required this.sleetAccumulationLweAvg,
-    required this.sleetAccumulationLweMax,
-    required this.sleetAccumulationLweMin,
-    required this.sleetAccumulationLweSum,
-    required this.sleetAccumulationMax,
-    required this.sleetAccumulationMin,
-    required this.sleetIntensityAvg,
-    required this.sleetIntensityMax,
-    required this.sleetIntensityMin,
-    required this.snowAccumulationAvg,
-    required this.snowAccumulationLweAvg,
-    required this.snowAccumulationLweMax,
-    required this.snowAccumulationLweMin,
-    required this.snowAccumulationLweSum,
-    required this.snowAccumulationMax,
-    required this.snowAccumulationMin,
-    required this.snowAccumulationSum,
-    required this.snowIntensityAvg,
-    required this.snowIntensityMax,
-    required this.snowIntensityMin,
-    required this.sunriseTime,
-    required this.sunsetTime,
-    required this.temperatureApparentAvg,
-    required this.temperatureApparentMax,
-    required this.temperatureApparentMin,
-    required this.temperatureAvg,
-    required this.temperatureMax,
-    required this.temperatureMin,
+    this.precipitationProbabilityAvg,
+    this.precipitationProbabilityMax,
+    this.precipitationProbabilityMin,
+    this.pressureSeaLevelAvg,
+    this.pressureSeaLevelMax,
+    this.pressureSeaLevelMin,
+    this.pressureSurfaceLevelAvg,
+    this.pressureSurfaceLevelMax,
+    this.pressureSurfaceLevelMin,
+    this.rainAccumulationAvg,
+    this.rainAccumulationLweAvg,
+    this.rainAccumulationLweMax,
+    this.rainAccumulationLweMin,
+    this.rainAccumulationMax,
+    this.rainAccumulationMin,
+    this.rainAccumulationSum,
+    this.rainIntensityAvg,
+    this.rainIntensityMax,
+    this.rainIntensityMin,
+    this.sleetAccumulationAvg,
+    this.sleetAccumulationLweAvg,
+    this.sleetAccumulationLweMax,
+    this.sleetAccumulationLweMin,
+    this.sleetAccumulationLweSum,
+    this.sleetAccumulationMax,
+    this.sleetAccumulationMin,
+    this.sleetIntensityAvg,
+    this.sleetIntensityMax,
+    this.sleetIntensityMin,
+    this.snowAccumulationAvg,
+    this.snowAccumulationLweAvg,
+    this.snowAccumulationLweMax,
+    this.snowAccumulationLweMin,
+    this.snowAccumulationLweSum,
+    this.snowAccumulationMax,
+    this.snowAccumulationMin,
+    this.snowAccumulationSum,
+    this.snowIntensityAvg,
+    this.snowIntensityMax,
+    this.snowIntensityMin,
+    this.sunriseTime,
+    this.sunsetTime,
+    this.temperatureApparentAvg,
+    this.temperatureApparentMax,
+    this.temperatureApparentMin,
+    this.temperatureAvg,
+    this.temperatureMax,
+    this.temperatureMin,
     this.uvHealthConcernAvg,
     this.uvHealthConcernMax,
     this.uvHealthConcernMin,
     this.uvIndexAvg,
     this.uvIndexMax,
     this.uvIndexMin,
-    required this.visibilityAvg,
-    required this.visibilityMax,
-    required this.visibilityMin,
+    this.visibilityAvg,
+    this.visibilityMax,
+    this.visibilityMin,
     required this.weatherCodeMax,
     required this.weatherCodeMin,
-    required this.windDirectionAvg,
-    required this.windGustAvg,
-    required this.windGustMax,
-    required this.windGustMin,
-    required this.windSpeedAvg,
-    required this.windSpeedMax,
-    required this.windSpeedMin,
+    this.windDirectionAvg,
+    this.windGustAvg,
+    this.windGustMax,
+    this.windGustMin,
+    this.windSpeedAvg,
+    this.windSpeedMax,
+    this.windSpeedMin,
   });
 
   factory DailyValues.fromJson(Map<String, dynamic> json) => DailyValues(
@@ -506,14 +506,14 @@ class DailyValues {
         moonriseTime: json["moonriseTime"] == null ? null : DateTime.tryParse(json["moonriseTime"])?.toLocal(),
         moonsetTime: json["moonsetTime"] == null ? null : DateTime.tryParse(json["moonsetTime"])?.toLocal(),
         precipitationProbabilityAvg: json["precipitationProbabilityAvg"]?.toDouble(),
-        precipitationProbabilityMax: json["precipitationProbabilityMax"],
-        precipitationProbabilityMin: json["precipitationProbabilityMin"],
-        pressureSeaLevelAvg: json["pressureSeaLevelAvg"],
-        pressureSeaLevelMax: json["pressureSeaLevelMax"],
-        pressureSeaLevelMin: json["pressureSeaLevelMin"],
-        pressureSurfaceLevelAvg: json["pressureSurfaceLevelAvg"],
-        pressureSurfaceLevelMax: json["pressureSurfaceLevelMax"],
-        pressureSurfaceLevelMin: json["pressureSurfaceLevelMin"],
+        precipitationProbabilityMax: json["precipitationProbabilityMax"]?.toDouble(),
+        precipitationProbabilityMin: json["precipitationProbabilityMin"]?.toDouble(),
+        pressureSeaLevelAvg: json["pressureSeaLevelAvg"]?.toDouble(),
+        pressureSeaLevelMax: json["pressureSeaLevelMax"]?.toDouble(),
+        pressureSeaLevelMin: json["pressureSeaLevelMin"]?.toDouble(),
+        pressureSurfaceLevelAvg: json["pressureSurfaceLevelAvg"]?.toDouble(),
+        pressureSurfaceLevelMax: json["pressureSurfaceLevelMax"]?.toDouble(),
+        pressureSurfaceLevelMin: json["pressureSurfaceLevelMin"]?.toDouble(),
         rainAccumulationAvg: json["rainAccumulationAvg"]?.toDouble(),
         rainAccumulationLweAvg: json["rainAccumulationLweAvg"]?.toDouble(),
         rainAccumulationLweMax: json["rainAccumulationLweMax"]?.toDouble(),
@@ -652,8 +652,8 @@ class DailyValues {
         "snowIntensityAvg": snowIntensityAvg,
         "snowIntensityMax": snowIntensityMax,
         "snowIntensityMin": snowIntensityMin,
-        "sunriseTime": sunriseTime.toIso8601String(),
-        "sunsetTime": sunsetTime.toIso8601String(),
+        "sunriseTime": sunriseTime?.toIso8601String(),
+        "sunsetTime": sunsetTime?.toIso8601String(),
         "temperatureApparentAvg": temperatureApparentAvg,
         "temperatureApparentMax": temperatureApparentMax,
         "temperatureApparentMin": temperatureApparentMin,
